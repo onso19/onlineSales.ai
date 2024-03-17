@@ -1,0 +1,156 @@
+/* CSS for Dynamic Form Generator */
+.heading {
+    font-family: Arial, sans-serif;
+    font-size: 29px;
+    font-weight: unset;
+    text-transform: uppercase;
+}
+
+.heading-buttons {
+    margin: 0 10px;
+    padding: 5px 6px;
+    border-radius: 8px;
+    background: #fff;
+    border: 1px solid #ccc;
+    color: #666;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.heading-buttons:hover {
+    background-color: #201f1f;
+    color: #fff;
+}
+
+form {
+    margin-top: 20px;
+}
+
+form div {
+    margin: 10px auto;
+    display: flex;
+    justify-content: space-between; /* Adjust spacing between elements */
+    align-items: center;
+    max-width: 500px;
+}
+
+input[type="text"],
+input[type="number"],
+select {
+    flex: 1; /* Make the input field expand to fill available space */
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px; /* Adjust spacing between input field and other elements */
+    box-sizing: border-box;
+    color: grey;
+}
+
+.checkbox {
+    /* margin-right: 5px; */
+    flex-direction: row;
+    font-size: 14px;
+}
+
+input[type="checkbox"] {
+    cursor: pointer;
+    position: relative;
+}
+span.error {
+    display: block;
+    color: red;
+    font-size: 14px;
+    font-style: italic;
+    padding-right: 12px; /* Adjust spacing between error message and remove button */
+}
+
+button[type="button"],
+button[type="submit"] {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button[type="button"] {
+    padding: 5px 10px;
+    font-size: 12px;
+    margin-left: 10px; /* Adjust spacing between remove button and input field */
+}
+
+button[type="submit"] {
+    padding: 6px 16px;
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: whitesmoke;
+    background-color: #206573;
+    border-radius: 22px;
+}
+
+button[type="button"]:hover {
+    background-color: #218838;
+}
+
+button[type="submit"]:hover {
+    background-color: whitesmoke;
+    color: #000;
+}
+
+.addBack {
+    background-color: #58afe1 !important;
+    color: #fff !important;
+}
+
+.member-details {
+    font-style: italic;
+    color: #666;
+    cursor: pointer;
+}
+
+.removed {
+    font-size: 14px;
+    font-style: italic !important;
+    color: #1f5968;
+    padding: 0px 10px;
+}
+
+.removed-button {
+    flex-direction: row;
+}
+.submissions{
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 600;
+    color: grey;
+    margin:20px 0;
+    font-style: italic;
+}
+.submissions-heading{
+    font-size: 15px;
+    font-weight: 600;
+}
+.termsCheckbox {
+    margin-right: 5px;
+}
+
+.termsLabel {
+    color: grey;
+    font-size: 14px;
+    text-wrap: no-wrap;
+}
+.fileinput{
+    padding: 0 5px;
+}
+.conditionsMessage {
+    color: grey;
+    font-size: 14px;
+    margin-top: 5px;
+    margin-left: 2px; 
+    display: block;
+}
+.termsCheckbox:checked {
+    padding:0 5px;
+}
